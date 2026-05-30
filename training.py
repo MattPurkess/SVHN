@@ -12,6 +12,7 @@ def training(model, training_data):
         for images, labels in batches:
             images = images.to('cuda')
             labels = labels.to('cuda')
+            
             predictions = model(images)
             optimiser.zero_grad()
             loss = loss_fn(predictions, labels)
