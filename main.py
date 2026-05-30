@@ -7,7 +7,7 @@ def main():
     train_data, test_data = LoadData.loadData()
     train_data = train_data
 
-    model = NN_model.MNIST_Model()
+    model = NN_model.SVHN_Model()
     model = model.to('cuda')
 
     training.training(model, train_data)

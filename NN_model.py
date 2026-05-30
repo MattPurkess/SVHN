@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-class MNIST_Model (nn.Module):
+class SVHN_Model (nn.Module):
     def __init__(self):
         super().__init__()
         
