@@ -1,9 +1,4 @@
-# Virtual environment
 .venv/
-
-# Datasets 
 data/
-
-# Editor
 .vscode/
-
+__pycache__/
