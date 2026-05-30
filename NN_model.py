@@ -4,7 +4,7 @@ import torch.nn as nn
 class SVHN_Model (nn.Module):
     def __init__(self):
         super().__init__()
-        
+
         self.C1 = nn.Conv2d(3, 16, kernel_size=3, stride=1, padding=1)
         self.N1 = nn.BatchNorm2d(16)
         self.P1 = nn.MaxPool2d(2)
