@@ -1,4 +1,5 @@
 import torchvision
+import scipy
 
 def loadData():
     train_data = torchvision.datasets.SVHN(
@@ -12,7 +13,7 @@ def loadData():
         download=True, 
         transform=torchvision.transforms.ToTensor()
     )
-    
+
     return train_data, test_data
 
 
